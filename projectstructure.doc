@@ -1,0 +1,99 @@
+|   .gitignore
+|   Package-lock.json
+|   package.json
+|   README.md
+
+|   server.js   
+
+
+
++---app
+|   +---models
+|   |       associate.js
+|   |       user.js
+|   |       
+|   \---routes
+|           api.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++---public
+|   +---app
+|   |   |   app.js
+|   |   |   routes.js
+|   |   |   
+|   |   +---controllers
+|   |   |       associateCtrl.js
+|   |   |       mainCtrl.js
+|   |   |       updateCtrl.js
+|   |   |       userCtrl.js
+|   |   |       
+|   |   +---services
+|   |   |       associateServices.js
+|   |   |       authServices.js
+|   |   |       userServices.js
+|   |   |       
+|   |   \---views
+|   |       |   index.html
+|   |       |   
+|   |       \---pages
+|   |           |   about.html
+|   |           |   home.html
+|   |           |   
+|   |           +---associate
+|   |           |       addAssociate.html
+|   |           |       editAssociate.html
+|   |           |       viewAssociate.html
+|   |           |       
+|   |           \---users
+|   |                   login.html
+|   |                   logout.html
+|   |                   profile.html
+|   |                   register.html
+|   |                   
+|   \---assets
+|       +---css
+|       +---fonts 
+|       +---images
+|       \---js
+|               
+\---Screenshots
+        
+
+
+

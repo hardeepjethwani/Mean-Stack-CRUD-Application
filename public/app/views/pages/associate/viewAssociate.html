@@ -1,0 +1,160 @@
+<div class="container">
+  <div class="table-wrapper" id="tblCustomers">
+
+    <div class="table-title">
+      <div class="row">
+
+        <div class="col-sm-6">
+          <h2>Associate <b>Details</b></h2>
+        </div>
+
+        <div class="col-sm-2" export-csv-ignore="true" data-html2canvas-ignore="true">
+          <button type="button" class="btn btn-info add-new" ng-click="asso.ExportCSV()"><i
+              class="fa fa-download"></i>Export to CSV</button>
+        </div>
+
+        <div class="col-sm-2" data-html2canvas-ignore="true">
+          <button type="button" class="btn btn-info add-new" ng-click="asso.ExportPDF()"><i class="fa fa-print"></i>Export
+            to PDF</button>
+        </div>
+        
+        <div class="col-sm-2" data-html2canvas-ignore="true">
+          <a href="/addAssociate"><button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add
+              New</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <table class="table table-bordered" id="table">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact No.</th>
+          <th>Skills</th>
+          <th data-html2canvas-ignore="true" class="noExport">Actions</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat="a in asso.listData">
+        <tr>
+          <td>{{a.empid}}</td>
+          <td>{{a.name}}</td>
+          <td>{{a.email}}</td>
+          <td>{{a.contact}}</td>
+          <td>{{a.skills}}</td>
+          <td data-html2canvas-ignore="true" class="noExport">
+            <!-- <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a> -->
+            <a class="edit" title="Edit" data-toggle="tooltip" ng-click="asso.editAssociate(a)"><i
+                class="material-icons">&#xE254;</i></a>
+            <a class="delete" title="Delete" data-toggle="tooltip" ng-click="asso.deleteAssociate(a.empid)"><i
+                class="material-icons">&#xE872;</i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+<style type="text/css">
+  .table-wrapper {
+    width: 1050px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  }
+
+  .table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+  }
+
+  .table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+  }
+
+  .table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+  }
+
+  .table-title .add-new i {
+    margin-right: 4px;
+  }
+
+  table.table {
+    table-layout: fixed;
+  }
+
+  table.table tr th,
+  table.table tr td {
+    border-color: #e9e9e9;
+  }
+
+  table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  table.table th:last-child {
+    width: 100px;
+  }
+
+  table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+  }
+
+  table.table td a.add {
+    color: #27C46B;
+  }
+
+  table.table td a.edit {
+    color: #FFC107;
+  }
+
+  table.table td a.delete {
+    color: #E34724;
+  }
+
+  table.table td i {
+    font-size: 19px;
+  }
+
+  table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+  }
+
+  table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+  }
+
+  table.table .form-control.error {
+    border-color: #f50000;
+  }
+
+  table.table td .add {
+    display: none;
+  }
+</style>

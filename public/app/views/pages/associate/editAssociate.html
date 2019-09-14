@@ -1,0 +1,56 @@
+<div class="container form-container">
+    <div class="row">
+        <div class=" col-md-3"></div>
+        <div class="col-md-6 form-1">
+            <h3 ><b>Update Associate Details</b></h3>
+
+
+            <!-- Email -->
+            <form ng-submit="update.updateDetails(updData)">
+                <label style="color: floralwhite">Emp Id :</label>
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Employee Id*"
+                         ng-model="update.updData.empid" ng-init="update.updData.empid=update.empid"   name="empid"  disabled required />
+                </div>
+
+                <label style="color: floralwhite">Name :</label>
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Full Name*"
+                          ng-model="update.updData.name" ng-init="update.updData.name=update.name" name="name"    required/>
+                </div>
+
+                <label style="color: floralwhite">Contact :</label>
+                <div class="form-group">
+                    <input  class="form-control"  placeholder="Contact No.*"
+                         ng-model="update.updData.contact" ng-init="update.updData.contact=update.contact"  name="contact"  required/>
+                </div>
+
+                <label style="color: floralwhite">Email :</label>
+                <div class="form-group">
+                    <input type="email" class="form-control"  placeholder="Email*"
+                         ng-model="update.updData.email" ng-init="update.updData.email=update.email"  name="email"  required/>
+                </div>
+
+                <label style="color: floralwhite">Skills :</label>
+                <div class="form-group">
+                    <input type="text" class="form-control"  placeholder="Skills*"
+                         ng-model="update.updData.skills" ng-init="update.updData.skills=update.skills"  name="skills"  required />
+                </div>
+
+
+                <br>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" style="display: block; margin: 0 auto;"
+                        value="Update Associate" />
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="jumbotron text-center" ng-show="asso.loadng">
+    <span class="glyphicon glyphicon-repeat spinner"></span>
+    <p>Loadng....</p>
+</div> -->

@@ -1,0 +1,54 @@
+<div class="container form-container">
+    <div class="row">
+        <div class=" col-md-3"></div>
+        <div class="col-md-6 form-1">
+            <div class="row show-hide-message" ng-show="main.successMsg">
+                <div class="alert alert-success"> {{main.successMsg}}</div>
+            </div>
+
+            <div class="row show-hide-message" ng-show="main.errorMsg">
+                <div class="alert alert-danger"> {{main.errorMsg}}</div>
+            </div>
+
+            <h3><b>Login to WuMatix</b></h3>
+
+
+            <form ng-submit="main.doLogin(loginData)">
+                <label style="color: floralwhite">Username:</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="please enter username"
+                        ng-model="main.loginData.username" />
+                </div>
+                <label style="color: floralwhite">Password:</label>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="please enter password"
+                        ng-model="main.loginData.password" />
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" style="display: block; margin: 0 auto;" value="Login" />
+                </div>
+
+            </form>
+
+
+            <!-- <div class="form-group">
+                            <a href="#" class="btnForgetPwd">Forget Password?</a>
+                        </div> -->
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="jumbotron text-center" ng-show="main.loadng">
+        <span class="glyphicon glyphicon-repeat spinner"></span>
+        <p>Loadng....</p>
+    </div>
+
+    <br>
+
+
+</div>

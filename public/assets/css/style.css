@@ -1,0 +1,75 @@
+main{
+    padding-top: 30px;
+}
+
+
+
+/* show hide succes failure register mesage */
+.show-hide-message.ng-hide-remove{
+    -webkit-animation:zoomIn 0.3s both ease;
+    -moz-animation:zoomIn 0.3s both ease;
+    animation:zoomIn 0.3s both ease;
+}
+
+/* animations */
+
+.spinner{
+    -webkit-animation: spin 1s infinite;
+    -moz-animation: spin 1s infinite;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spin{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
+
+/* Login Form CSS */
+.form-container{
+    margin-top: 6%;
+}
+
+.form-1{
+    padding: 5%;
+
+    background: rgba(255, 153, 51,0.6);
+    box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.form-1 h3{
+    text-align: center;
+    margin-bottom:9%;
+    color:#fff;
+}
+
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+
+
+/* CSS for index bacground */
+body {
+    background-image: url('../images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
