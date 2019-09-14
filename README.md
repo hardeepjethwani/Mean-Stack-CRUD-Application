@@ -1,6 +1,6 @@
 # meanStackProject
 
-This Project basically contains CURD operations using MEAN stack
+This Project basically contains CRUD operations using MEAN stack
 
 # Project Setup
 
